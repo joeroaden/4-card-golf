@@ -36,23 +36,28 @@ function shuffle(o) {
 
 function deal(myDeck) {
   let userHand = [];
-  let card1 = Math.floor(Math.random() * myDeck.length);
-  let card2 = Math.floor(Math.random() * myDeck.length);
-  let card3 = Math.floor(Math.random() * myDeck.length);
-  let card4 = Math.floor(Math.random() * myDeck.length);
+  let card1 = myDeck.pop();
+  let card2 = myDeck.pop();
+  let card3 = myDeck.pop();
+  let card4 = myDeck.pop();
   userHand.push(card1, card2, card3, card4);
+  console.log(myDeck);
   return userHand;
 }
 
+
+
 let myDeck = new deck();
 myDeck = shuffle(myDeck);
-let newDeal = deal(myDeck);
-console.log(newDeal);
+let newHand = deal(myDeck);
+console.log(myDeck);
+console.log(newHand);
+
 
 
 
 // 1. establish 52 card deck [x]
 // 2. establish function to shuffle 52 card deck [x]
-// 3. establish function to deal 4 cards to user
+// 3. establish function to deal 4 cards to user [x]
 // 4. establish function to draw card from remaining deck array and assign to inPlay
 
