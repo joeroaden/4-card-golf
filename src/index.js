@@ -6,24 +6,26 @@ import $ from 'jquery';
 import {gamePlay} from './gamePlay.js';
 import {deck, shuffle, deal} from './gameSetup.js';
 
-$('#gameStartBtn').click(function() {
+$(document).ready(function() {
   let userHand = [];
-  let inPlay; // not sure if array?
-  let myDeck = new deck();
-  myDeck = shuffle(myDeck);
-  userHand = deal(myDeck);
-  inPlay = gamePlay(myDeck);
-  $('#gamePlay').hide();
-  $('#gameBoard').show();
-  console.log(userHand);
-  console.log(inPlay);
-  console.log(myDeck);
-});
+  let inPlay = []; 
+  let myDeck = [];
 
-$('#fullDeck').click(function() {
-  let inPlay;
-  inPlay = gamePlay(myDeck);
-  console.log(inPlay);
+  $('#gameStartBtn').click(function() {
+    myDeck = new deck();
+    myDeck = shuffle(myDeck);
+    userHand = deal(myDeck);
+    inPlay = gamePlay(myDeck);
+    $('#gamePlay').hide();
+    $('#gameBoard').show();
+    console.log(userHand);
+    console.log(inPlay);
+    console.log(myDeck);
+  });
+
+  $('#fullDeck').click(function() {
+    inPlay = gamePlay(myDeck);
+  });
 });
 
 // let myDeck = new deck();
