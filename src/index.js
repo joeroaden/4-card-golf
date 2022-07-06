@@ -4,21 +4,32 @@ import './css/styles.css';
 import $ from 'jquery';
 // import gameStartLogic from './gameSetup.js';
 import {gamePlay} from './gamePlay.js';
-import {deck} from './gameSetup.js';
-import {shuffle} from './gameSetup.js';
-import {deal} from './gameSetup.js';
+import {deck, shuffle, deal} from './gameSetup.js';
 
 $('#gameStartBtn').click(function() {
   let userHand = [];
-  let inPlay;
-  let myDeck = deck();
+  let inPlay; // not sure if array?
+  let myDeck = new deck();
   myDeck = shuffle(myDeck);
   userHand = deal(myDeck);
   inPlay = gamePlay(myDeck);
+  $('#gamePlay').hide();
+  $('#gameBoard').show();
   console.log(userHand);
   console.log(inPlay);
   console.log(myDeck);
 });
+
+$('#gameDeck').click(function() {
+  let inPlay;
+  inPlay = gamePlay(myDeck);
+});
+
+// let myDeck = new deck();
+// myDeck = shuffle(myDeck);
+// let newHand = deal(myDeck);
+// console.log(myDeck);
+// console.log(newHand);
 
 // for(var i=0; i < myDeck.length; i++){
 //   div = document.createElement('div');
