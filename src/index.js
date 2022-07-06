@@ -5,6 +5,7 @@ import $ from 'jquery';
 // import gameStartLogic from './gameSetup.js';
 import {gamePlay} from './gamePlay.js';
 import {deck, shuffle, deal} from './gameSetup.js';
+import {renderCard} from './renderCard.js';
 
 $(document).ready(function() {
   let userHand = [];

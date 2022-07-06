@@ -1,22 +1,23 @@
-function renderCard(userHand, inPlay)
+export function renderCard(userHand, inPlay)
 {
   // document.getElementById('deck').innerHTML = '';
 
   for(var i = 0; i < inPlay.length; i++)
   {
-    let card = inPlayCard.createElement("div"); //identify where card needs to be created 
+    let inPlayCard = document.createElement("inPlayVisual"); //identify where card needs to be created back face?
     let icon = '';
-    if (inPlay[i].suit == 'hearts')
+    if (inPlay[i].suit == 'Hearts')
       icon='&hearts';
-    else if (inPlay[i].Suit == 'spades')
+    else if (inPlay[i].suit == 'Spades')
       icon = '&spades';
-    else if (inPlay[i].Suit == 'diamonds')
+    else if (inPlay[i].suit == 'Diamonds')
       icon = '&diams';
     else
       icon = '&clubs';
 
-    card.innerHTML = inPlay[i].Value + '' + icon;
+    card.innerHTML = inPlay[i].name + '' + icon;
     card.className = 'card';
-    document.getElementById("deck").appendChild(card);
+    let inPLayDisplay = document.getElementById("inPlayDisplay").appendChild(card);
+    document.body.insertBefore(inPlayCard, inPlayDisplay);
   }
 }
