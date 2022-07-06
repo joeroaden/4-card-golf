@@ -20,9 +20,10 @@ $('#gameStartBtn').click(function() {
   console.log(myDeck);
 });
 
-$('#gameDeck').click(function() {
+$('#fullDeck').click(function() {
   let inPlay;
   inPlay = gamePlay(myDeck);
+  console.log(inPlay);
 });
 
 // let myDeck = new deck();

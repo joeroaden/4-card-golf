@@ -18,73 +18,139 @@
     <div class="containerCards">
       <div class="rows">
       <div id="fullDeck">
-      <div class="deck">
-        <div class="card clickcard">
-          <div class="front face"></div>
-          <div class="back face"></div>
+        <div class="deck">
+          <div class="card clickcard">
+            <div class="front face"></div>
+            <div class="back face"></div>
+          </div>
         </div>
-      </div>
       </div>
 
       <div id="inPlayCard">
-      <div class="deck">
-        <div class="card clickcard">
-          <div class="front face"></div>
-          <div class="back face"></div>
+        <div class="deck">
+          <div class="card clickcard">
+            <div class="front face"></div>
+            <div class="back face"></div>
+          </div>
         </div>
-      </div>
       </div>
 
       <div id="userCard1">
-      <div class="deck">
-        <div class="card clickcard">
-          <div class="front face"></div>
-          <div class="back face"></div>
+        <div class="deck">
+          <div class="card clickcard">
+            <div class="front face"></div>
+            <div class="back face"></div>
+          </div>
         </div>
-      </div>
       </div>
 
       <div id="userCard2">
-      <div class="deck">
-        <div class="card clickcard">
-          <div class="front face"></div>
-          <div class="back face"></div>
+        <div class="deck">
+          <div class="card clickcard">
+            <div class="front face"></div>
+            <div class="back face"></div>
+          </div>
         </div>
       </div>
-      </div>
 
-    <div id="discardPile">
-      <div class="deck">
-        <div class="card clickcard">
-          <div class="front face"></div>
-          <div class="back face"></div>
+      <div id="discardPile">
+        <div class="deck">
+          <div class="card clickcard">
+            <div class="front face"></div>
+            <div class="back face"></div>
+          </div>
         </div>
       </div>
-      </div>
 
-    <div class="deck">
-    </div>
+      <div class="deck"></div>
 
-    <div id="userCard3">
-      <div class="deck">
-        <div class="card clickcard">
-          <div class="front face"></div>
-          <div class="back face"></div>
+      <div id="userCard3">
+        <div class="deck">
+          <div class="card hovercard">
+            <div class="front face"></div>
+            <div class="back face"></div>
+          </div>
         </div>
-      </div>
       </div>
     
-    <div id="userCard4">
-      <div class="deck">
-        <div class="card clickcard">
-          <div class="front face"></div>
-          <div class="back face"></div>
+      <div id="userCard4">
+        <div class="deck">
+          <div class="card hovercard">
+            <div class="front face"></div>
+            <div class="back face"></div>
+          </div>
         </div>
       </div>
-      </div>
-    
     </div>
-
+    </div>
+    <div class ="scoreboard">
+      <table>
+        <tr>
+          <td>Hole 1:</td>
+          <td>Hole 2:</td>
+          <td>Hole 3:</td>
+        </tr>
+        <tr>
+          <td><input type="number" name="hole1" id="hole1"></td>
+          <td><input type="number" name="hole2" id="hole2"></td>
+          <td><input type="number" name="hole3" id="hole3"></td>
+        </tr>
+        </table>
+        <table>
+        <tr>
+          <td>Hole 4:</td>
+          <td>Hole 5:</td>
+          <td>Hole 6:</td>
+        </tr>
+        <tr>
+          <td><input type="number" name="hole4" id="hole4"></td>
+          <td><input type="number" name="hole5" id="hole5"></td>
+          <td><input type="number" name="hole6" id="hole6"></td>
+        </tr>
+        </table>
+        <table>
+        <tr>
+          <td>Hole 7:</td>
+          <td>Hole 8:</td>
+          <td>Hole 9:</td>
+        </tr>
+        <tr>
+          <td><input type="number" name="hole7" id="hole7"></td>
+          <td><input type="number" name="hole8" id="hole8"></td>
+          <td><input type="number" name="hole9" id="hole9"></td>
+        </tr>
+        </table>
+        <button class="btn-success" id="gameEndBtn">Add Score</button>
+    
+    <div class = "scoringLegend"></div>
+        <h2>Scoring</h2>
+        <p>Cards are scored as follows:</p> 
+        <ul>
+          <li>Each numeral card scores face value (Ace=1, Two=2, etc.)</li>
+          <li>Each Jack or Queen scores 10 points.</li>
+          <li>Pairing the same cards in a scoring column is scored as zero.</li>
+          <li>Each King scores zero points.</li>
+          <li>Joker scores as -2 points</li>
+          <li>Each 5 counts as -5</li>
+        </ul>
+    <!-- <label for ="score">Hole 1</label>
+      <input id ="score" type="number">
+      <label for ="score">Hole 2</label>
+      <input id ="score" type="number">
+      <label for ="score">Hole 3</label>
+      <input id ="score" type="number">
+      <label for ="score">Hole 4</label>
+      <input id ="score" type="number">
+      <label for ="score">Hole 5</label>
+      <input id ="score" type="number">
+      <label for ="score">Hole 6</label>
+      <input id ="score" type="number">
+      <label for ="score">Hole 7</label>
+      <input id ="score" type="number">
+      <label for ="score">Hole 8</label>
+      <input id ="score" type="number">
+      <label for ="score">Hole 9</label>
+      <input id ="score" type="number"> -->
     </div>
   </div>
 </body>

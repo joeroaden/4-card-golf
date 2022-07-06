@@ -1,5 +1,5 @@
 body {
-  background-color: azure;
+  background-color: lightgray;
 }
 
 #gameBoard {
@@ -11,16 +11,43 @@ display: grid;
 grid-template-columns: auto auto auto auto;
 }
 
+.scoreboard{
+  width: auto;
+  padding: 20px;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  float: right;
+}
+
+.scoreboard input {
+  width: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.scoringLegend {
+  width: 100px;
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.scoringLegend li {
+  width: 100px;
+}
+
 *{
   box-sizing:border-box;
 }
 
 .containerCards{
-    width:auto;
+    float: left;
+    width:1000px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 20px;
     margin-top: 25px;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
     /* margin:0 auto; */
     /* display: center; */
     justify-content: space-between;
