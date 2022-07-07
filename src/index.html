@@ -10,8 +10,33 @@
   <div class="container">
     <div id = "gamePlay">
       <h1>4 Card Golf</h1>
-      <p>These are words that explain the gameplay</p>
-      <button class="btn-success" id="gameStartBtn">Tee Off</button>
+      <p>A card game where your goal is to score as low as possible. Click below to start!</p>
+      <button class="btn-secondary" id="gameStartBtn">Tee Off</button>
+      <hr>
+      <p>This is a fun game that is mostly luck with a little skill.  A good game for just being able to not think too hard so you can talk and enjoy while playing a game.</p>
+
+        <h3>INTRODUCTION:</h3>
+        
+        <p>Golf is a card game for two or more players, in which the object is to score as little as possible, as in the sport of Golf. In front of each player is a layout of cards arranged in a square or rectangle, and players improve their scores by drawing new cards to replace unwanted cards, which they discard. Each deal is seen as the equivalent of a hole of Golf, and a complete game consists of 9 or 18 deals, corresponding to the length of a Golf course.</p>
+
+        <h3>Players, Cards and Deal</h3>
+        <p>The dealer deals four cards to each player, one at a time. Each player's cards are to be arranged face down in a square. The remaining undealt cards are placed face-down in the centre of the table to form a drawing stock. The top card of the stock is turned face up and placed beside the stock to start the discard pile. Before play begins, each player may look at the two nearest cards of his or her square layout, without showing them to anyone else.  These are the only two cards a player can look at during the game.</p>
+
+        <h3>The Play</h3>
+        <p>First you draw a card, you may use it to replace one of the four cards of your layout, but you are not allowed to look at the top two cards in your layout before deciding which to replace. You place the drawn card face-up in your layout, and discard the card that previously occupied that position</p>
+        <p>You continue to replace cards until all are turned face up.  The Hole ends and you write down your score.</p>
+        
+        <h3>Scoring</h3>
+        <p>Play ends when everyone's cards are turned up.  Cards are scored as follows.</p>
+
+          <ul>
+            <li>Each numeral card scores face value (Ace=1, Two=2, etc.)</li>
+            <li>Each Jack or Queen scores 10 points.</li>
+            <li>Pairing the same cards in a scoring column is scored as zero.</li>
+            <li>Each King scores zero points.</li>
+            <li>Joker scores as -2 points</li>
+            <li>Each 5 counts as -5</li>
+          </ul>
     </div>
   </div>
   <div id ="gameBoard">
@@ -32,7 +57,7 @@
 
       <div id="inPlayCard">
         <div class="deck">
-          <div class="card">
+          <div class="card inPlay">
             <div class="front face">
               <img id="inPlayDisplay"></img>
             </div>
@@ -144,7 +169,7 @@
           <td><input type="number" name="hole9" id="hole9"></td>
         </tr>
         </table>
-        <button class="btn-success" id="gameEndBtn">Add Score</button>
+        <button class="btn-secondary" id="gameEndBtn">Add Score</button>
     
     <div class = "scoringLegend"></div>
         <h2>Scoring</h2>

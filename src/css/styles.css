@@ -1,5 +1,31 @@
 body {
   background-color: lightgray;
+  margin-top: 50px;
+}
+
+h1 {
+  color: purple;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  color: rgb(39, 38, 39);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+  color: rgb(39, 38, 39);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  color: rgb(39, 38, 39);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #gameBoard {
@@ -47,6 +73,10 @@ grid-template-columns: auto auto auto auto;
   box-sizing:border-box;
 }
 
+.inPlayDisplay {
+  visibility: visible;
+}
+
 .containerCards{
     float: left;
     width:1000px;
@@ -54,8 +84,6 @@ grid-template-columns: auto auto auto auto;
     margin-right: 20px;
     margin-top: 25px;
     margin-bottom: 20px;
-    /* margin:0 auto; */
-    /* display: center; */
     justify-content: space-between;
   }
 
@@ -79,12 +107,6 @@ grid-template-columns: auto auto auto auto;
     border-radius:0 0 10px 10px; 
     text-align:center;
     padding:10px;
-    /* h2{
-      margin:0;
-    } */
-    /* h3{
-      margin:10px 0;
-    } */
   }
 
   .card{
@@ -115,20 +137,6 @@ grid-template-columns: auto auto auto auto;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     box-sizing: border-box;
-    /* &:before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background-size:100% 100%;
-      background: url('https://i.imgur.com/W3tra4F.gif');
-      -webkit-transform: rotateY(180deg);
-      -moz-transform: rotateY(180deg);
-      -ms-transform: rotateY(180deg);
-      -o-transform: rotateY(180deg);
-      transform: rotateY(180deg);
-    } */
   }
 
   .front, .back{
@@ -137,7 +145,6 @@ grid-template-columns: auto auto auto auto;
 
   .front{
     background-image:url('https://i.pinimg.com/originals/15/51/6d/15516d50f13466d994693f51a1911f07.gif');
-    /* https://media.giphy.com/media/3o7TKV0WqNdJULOACs/giphy.gif */
     background-size: auto;
     background-position:center;
     background-repeat: no-repeat;
@@ -149,15 +156,14 @@ grid-template-columns: auto auto auto auto;
     box-shadow: 0 0 0 #aaa;
   }
 
+  .locked {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
   .flipped, .hovercard:hover{
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    /* .front{
-      box-shadow:0 0 0 #aaa;
-    }
-    .back{
-      box-shadow: 5px 5px 5px #aaa;
-    } */
   }
 
   .return{
@@ -172,7 +178,4 @@ grid-template-columns: auto auto auto auto;
     border-radius:0 0 10px 10px;
     background-color:darken(whitesmoke, 10%);
     font-size:18px;
-    /* &:focus{
-      outline:none;
-    } */
   }

@@ -14,7 +14,7 @@ export function deck(){
       cards.push( new card( n+1, this.names[n], this.suits[s] ) );
     }
   }
-  cards.push(new card("joker","joker","joker")); //does Jokers get added to cards array?
+  cards.push(new card("joker","joker","joker")); 
   return cards;
 }
 

@@ -33,15 +33,12 @@ $(document).ready(function() {
   });
 
   $(".clickcard, .hovercard").click(function() {
-    $(this).addClass("flipped").removeClass(".clickCard, .hoverCard");
+    $(this).addClass("locked").removeClass(".clickCard, .hoverCard");
+    $(".locked").click(function() {
+    });
+    $(".inPlay").click(function() {
+      userHand.splice(2,1,inPlay);
+      renderHandImgs(userHand);
+    });
   });
 });
-//   $(".clickcard, .hovercard").click(function() {
-//     if ($('#gameBoard').hasClass('.clickcard, .hovercard')) {
-//       $(this).toggleClass("flipped");
-//     } else if
-//     ($('#gameBoard').hasClass('.clickcard, .hovercard')) {
-//       $(this).toggleClass("locked");
-//     }
-//   });
-// });
