@@ -33,10 +33,15 @@ $(document).ready(function() {
   });
 
   $(".clickcard, .hovercard").click(function() {
-    if (document.getElementById("flipped") = true) {
-      $(this).toggleClass("flipped");
-    } else {
-      $(this).toggleClass("locked"); //create locked in css
-    }
+    $(this).addClass("flipped").removeClass(".clickCard, .hoverCard");
   });
 });
+//   $(".clickcard, .hovercard").click(function() {
+//     if ($('#gameBoard').hasClass('.clickcard, .hovercard')) {
+//       $(this).toggleClass("flipped");
+//     } else if
+//     ($('#gameBoard').hasClass('.clickcard, .hovercard')) {
+//       $(this).toggleClass("locked");
+//     }
+//   });
+// });
