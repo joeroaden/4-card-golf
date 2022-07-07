@@ -33,6 +33,10 @@ $(document).ready(function() {
   });
 
   $(".clickcard, .hovercard").click(function() {
-    $(this).toggleClass("flipped");
+    if ($(this).toggleClass("flipped") = true) {
+      $(this).toggleClass("flipped");
+    } else {
+      $(this).toggleClass("locked"); //create locked in css
+    }
   });
 });
