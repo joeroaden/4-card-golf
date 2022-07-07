@@ -1,10 +1,10 @@
 export function renderCardImg(inPlay) {
   let img = document.getElementById('inPlayDisplay');
   if (inPlay.suit === "joker") {
-      img.src="https://garretthays.github.io/images/img/joker/joker.png";
-    } else {
-      img.src="https://garretthays.github.io/images/img/"+inPlay.suit+"/"+inPlay.name+".png";
-    }
+    img.src="https://garretthays.github.io/images/img/joker/joker.png";
+  } else {
+    img.src="https://garretthays.github.io/images/img/"+inPlay.suit+"/"+inPlay.name+".png";
+  }
   img.style.width='258px';
   img.style.height='378px';
 }
