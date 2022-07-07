@@ -33,7 +33,7 @@ $(document).ready(function() {
   });
 
   $(".clickcard, .hovercard").click(function() {
-    if ($(this).toggleClass("flipped") = true) {
+    if (document.getElementById("flipped") = true) {
       $(this).toggleClass("flipped");
     } else {
       $(this).toggleClass("locked"); //create locked in css

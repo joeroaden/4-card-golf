@@ -43,13 +43,13 @@ Multiples of any numerical card cancel those cards and count as zero points (2, 
 Each King scores zero points.
 The player who has the lowest cumulative score after nine deals wins._
 
-- [x] _This project's GitHub repo can be found at the following link_ [GitHub Pages](https://github.com/joeroaden/4-card-golf).
+- [x] _This project's GitHub repo can be found at the following link_ [GitHub](https://github.com/joeroaden/4-card-golf).
 
 ## Setup/Installation Requirements
 
 - _To properly view this project, please see the steps below on cloning from GitHub_
 
-1. Locate this projects GitHub Repository via [GitHub Pages](https://github.com/joeroaden/4-card-golf).
+1. Locate this projects GitHub Repository via [GitHub](https://github.com/joeroaden/4-card-golf).
 
 2. Within the terminal, navigate to the directory where you want to clone and save this project (Typically Desktop, but just be sure you do not clone into another project's directory)
 
