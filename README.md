@@ -70,7 +70,9 @@ x. For additional information and help, here is a link to GitHub Docs that provi
 
 ## Known Bugs
 
-- _there are no known bugs at this time_
+- _Cards are unable to "lock" in place_
+- _Cannot swap the card in play with all four of the user's cards_
+- _Add Score button does not calculate score_
 
 ## License
 
